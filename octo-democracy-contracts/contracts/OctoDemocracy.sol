@@ -171,6 +171,10 @@ contract OctoDemocracy {
         return owner == _address;
     }
 
+    function getOwner() public view returns (address) {
+        return owner;
+    }
+
     function getCurrentVotingStatus() public view returns (OctoStatus) {
         return currentVotingStatus;
     }
